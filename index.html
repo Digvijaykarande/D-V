@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D & V ❤️</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="handwritten">Hey Baby Doll❤️</h1>
+        <p class="intro">I know you are mad at me 😭</p>
+        
+        <div class="card" id="card1">
+            <p>Are you still angry? 😢</p>
+            <button onclick="nextCard('card2')">Yes</button>
+            <button onclick="nextCard('card3')">No</button>
+        </div>
+        
+        <div class="card hidden" id="card2">
+            <p>kay kru mi tumcha sathi? 🤔</p>
+            <button onclick="nextCard('card4')">Try harder 😏</button>
+            <button onclick="nextCard('card5')">Say sorry again!</button>
+        </div>
+        
+        <div class="card hidden" id="card3">
+            <p>Yay! I knew you couldn’t stay mad at me! 😘</p>
+            <button onclick="nextCard('card6')">Are you sure?</button>
+            <button onclick="nextCard('card7')">Just kidding, I'm still mad! 😏</button>
+        </div>
+
+        <div class="card hidden" id="card4">
+            <p>How about a KitKat 🍫</p>
+            <button onclick="nextCard('card8')">That sounds nice 😊</button>
+            <button onclick="nextCard('card9')">Not enough! 😏</button>
+        </div>
+        
+        <div class="card hidden" id="card5">
+            <p>I am truly sorry, my love. I promise to make it up to you. ❤️</p>
+            <button onclick="nextCard('final')">Forgiven 😘</button>
+            <button onclick="nextCard('card10')">Hmm... Let me think 🤔</button>
+        </div>
+        
+        <div class="card hidden" id="card6">
+            <p>See, I knew you loved me! 😘</p>
+            <button onclick="nextCard('final')">Yes, I do! ❤️</button>
+        </div>
+
+        <div class="card hidden" id="card7">
+            <p>Okay okay, what if I get you a teddy? 🐨</p>
+            <button onclick="nextCard('final')">Now we're talking! 😄</button>
+            <button onclick="nextCard('card11')">Still not enough! 😈</button>
+        </div>
+
+        <div class="card hidden" id="card8">
+            <p>Yay! Let's plan a special date soon! 😍</p>
+            <button onclick="nextCard('final')">I'm excited! ❤️</button>
+        </div>
+
+        <div class="card hidden" id="card9">
+            <p>Aaho sorry na !</p>
+            <button onclick="nextCard('card7')">Try even harder! 😏</button>
+            <button onclick="nextCard('final')">Okay, I forgive you!😘</button>
+        </div>
+
+        <div class="card hidden" id="card10">
+            <p>Take your time, I'll wait for your forgiveness! 😇</p>
+            <button onclick="nextCard('final')">Okay, I forgive you! ❤️</button>
+        </div>
+
+        <div class="card hidden" id="card11">
+            <p>Okay okay! What if I also write you a love letter? 💌</p>
+            <button onclick="nextCard('final')">Now that's sweet! 😍</button>
+            <button id="nauty-button">still angry 😏</button>
+        </div>
+
+        <div class="card hidden" id="card12">
+            <p>Alright, I'll do whatever it takes! Just say the word! 😘</p>
+            <button onclick="nextCard('final')">You win! ❤️</button>
+        </div>
+
+        <div class="card hidden" id="final">
+            <p class="handwritten">No matter what, you're the most special person to me. I'm sorry ❤️</p>
+            <p class="easter-egg">(Plzz... tap the tiny heart below I want to say something !)</p>
+            <button id="secretButton" class="hidden" onclick="showSecret()">💖</button>
+        </div>
+        
+        <div id="secretMessage" class="hidden">
+            <p class="handwritten">
+                madam ji ❤,I know mi khup ghabrto pan tumchi khup respect krto, 
+                kay karu nahi yet express krta 😌.
+                jsa pan aahe tumcha ch aahe 💕 ghya  thod adjust krun, plz.
+            </p>
+            <p>I don't know how to communicate with people ,but i know how to code😉,
+                this is my way to express💖.
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
